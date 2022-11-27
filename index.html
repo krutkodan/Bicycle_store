@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="us">
   <head>
     <title>Bicycle Store</title>
     <meta charset="UTF-8" />
@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="container">
+  <div class="container">
+  <header>
       <div class="navbar">
         <div class="left-section-navbar">
           <img class="logo" src="/images/logo-navbar.svg" alt="logo" />
+          <div class="vertical_line"></div>
           <button class="search-button">
             <img class="logo-navbar" src="/images/search-navbar.svg" alt="search"/>
           </button>
-          <label hidden>Search</label><input class="search-area" type="search" placeholder="Search everything.. " />
+          <label for="search">
+          <input class="search-area" id="search" type="search" placeholder="Search everything.. "/>
+          </label>
         </div>
         <div class="right-section-navbar">
           <ul class="navbar-list">
@@ -37,6 +41,71 @@
           </button>
         </div>
       </div>
-    </header>
+  </header>
+
+
+
+    <div class="headings">
+      <H4>- RIDE <span class="away_text">AWAY!</span></H4>
+      <H1>YOUR BEST RIDE</H1>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar_categories"><a href="#">Bikes</a>
+      <ul class="sidebar_list">
+      <li><a href="#">Cross-Country</a></li>
+      <li><a href="#">Dirt Jump</a></li>
+      <li class="red_text"><a href="#">Downhill</a></li>
+      <li><a href="#">Enduro</a></li>
+      <li><a href="#">Fat Bikes</a></li>
+      <li><a href="#">Trail</a></li>
+      </ul>
+    </div>
+    <div class="accessories_equipments">
+      <span class="accessories"><a href="#">Accessories</a></span>
+      <span class="equipments"><a href="#">Equipments</a></span>
+    </div>
+      <div class="sidebar_categories">Price
+      <div class="price_input_box">
+        <label for="price_one">
+      <input type="number" min="3000" placeholder="3000$" class="price_input" id="price_one">
+        </label>
+        <label for="price_two">
+      <input type="number" min="3000" max="7000$" placeholder="7000$" class="price_input" id="price_two">
+        </label>
+      </div>
+      <div class="range_selector">
+        <label hidden>Slider
+      <input type="range" min="0" max="7000" value="50" class="slider">
+        </label>
+     </div>
+      </div>
+      <div class="sidebar_categories"><details class="dropdown"><summary>Brands</summary>
+        <div class="dropdown_content">
+      <ul class="sidebar_list">
+        <li class="red_text"><a href="#">All</a></li>
+        <li><a href="#">Santa Cruz</a></li>
+        <li><a href="#">Trek</a></li>
+        <li><a href="#">Intense</a></li>
+        <li><a href="#">Commencal</a></li>
+        <li><a href="#">Mondraker</a></li>
+      </ul>
+        </div>
+      </details>
+        </div>
+      <div class="sidebar_categories"><details class="dropdown"><summary>Materials</summary>
+        <div class="dropdown_content">
+      <ul class="sidebar_list">
+    <li><a href="#">Aluminium</a></li>
+    <li><a href="#">Carbon</a></li>
+      </ul>
+      </div>
+      </details>
+    </div>
+  </div>
+  </div>
   </body>
 </html>
+
+
+
+
