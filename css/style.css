@@ -97,7 +97,6 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
     color: black;
 }
 
-
 .basket {
     position: relative;
     cursor: pointer;
@@ -115,11 +114,8 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
     border-radius: 10px;
 }
 
-
-
-
 .headings {
-    padding: 25px 0 50px 20px;
+    padding: 25px 0 50px 25px;
 }
 
 H1 {
@@ -130,18 +126,33 @@ H4 {
     padding: 5px 0;
 }
 
-.away_text {
+.letter_spacing {
     letter-spacing: 3px;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+    margin-left: 25px;
     color: black;
     font-size: 0.90rem;
     height: auto;
     width: 150px;
+}
+
+.sidebar_categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+    position: relative;
+    padding: 15px 0;
+}
+
+.sidebar_list {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    margin-top: 20px;
+    position: relative;
 }
 
 .sidebar li {
@@ -149,8 +160,9 @@ H4 {
     
 }
 
-.sidebar a  {
+.sidebar a, summary  {
     color: black;
+    padding: 10px 0;
 }
 
 .sidebar a:hover  {
@@ -158,78 +170,29 @@ H4 {
     transition-duration: 0.5s;
 }
 
-.sidebar_list {
-    display: flex;
-    flex-direction: column;
-    font-weight: normal;
-    margin: 20px 0;
-    position: relative;
-}
-
-.sidebar_list a:hover::after{
-    content: "•";
-    width: 1px;
-    position: absolute;
-    left: -25px;
-    
-}
-
-.sidebar_categories {
-    font-weight: 500;
-    position: relative;
-    padding: 15px 0;
-}
-
 .red_text a {
     color: red;
-}
-
-.accessories_equipments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: stretch;
-    font-weight: 500;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    /*border: 3px solid purple;*/
-}
-
-.accessories_equipments > * {
-    margin: 10px 0;
 }
 
 .price_input_box {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    /*border: 1px solid burlywood;*/
+    margin-top: 15px;
 }
 
 .price_input {
     font-size: 0.7rem;
     outline: none;
     border: none;
+    background-color: unset;
     width: 50px;
     height: auto;
 }
 
-.range_selector {
-
-}
 .slider {
     width: 140px;
     height: 1px;
     background: none;
-    cursor: pointer;
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-summary {
-    list-style: none;
     cursor: pointer;
 }
 
@@ -239,6 +202,11 @@ summary::after {
     right: 20px;
     position: absolute;
 }
+
+.summary_content::after {
+    content: "";
+}
+
 
 
 

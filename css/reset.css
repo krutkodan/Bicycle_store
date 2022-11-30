@@ -31,3 +31,12 @@ li {
     list-style: none;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+}
+

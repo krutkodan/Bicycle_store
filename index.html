@@ -42,15 +42,12 @@
         </div>
       </div>
   </header>
-
-
-
     <div class="headings">
-      <H4>- RIDE <span class="away_text">AWAY!</span></H4>
-      <H1>YOUR BEST RIDE</H1>
+      <h4>- RIDE <span class="letter_spacing">AWAY!</span></h4>
+      <h1>YOUR BEST RIDE</h1>
     </div>
     <div class="sidebar">
-      <div class="sidebar_categories"><a href="#">Bikes</a>
+      <div class="sidebar_categories"><details open><summary class="summary_content">Bikes</summary>
       <ul class="sidebar_list">
       <li><a href="#">Cross-Country</a></li>
       <li><a href="#">Dirt Jump</a></li>
@@ -59,12 +56,15 @@
       <li><a href="#">Fat Bikes</a></li>
       <li><a href="#">Trail</a></li>
       </ul>
+      </details>
     </div>
-    <div class="accessories_equipments">
-      <span class="accessories"><a href="#">Accessories</a></span>
-      <span class="equipments"><a href="#">Equipments</a></span>
+    <div class="sidebar_categories">
+      <a href="#">Accessories</a>
     </div>
-      <div class="sidebar_categories">Price
+      <div class="sidebar_categories">
+      <a href="#">Equipments</a>
+    </div>
+      <div class="sidebar_categories"><span>Price</span>
       <div class="price_input_box">
         <label for="price_one">
       <input type="number" min="3000" placeholder="3000$" class="price_input" id="price_one">
@@ -73,35 +73,32 @@
       <input type="number" min="3000" max="7000$" placeholder="7000$" class="price_input" id="price_two">
         </label>
       </div>
-      <div class="range_selector">
-        <label hidden>Slider
-      <input type="range" min="0" max="7000" value="50" class="slider">
+        <label for="slider_range">
+      <input type="range" id="slider_range" min="0" max="7000" value="50" class="slider">
         </label>
-     </div>
       </div>
-      <div class="sidebar_categories"><details class="dropdown"><summary>Brands</summary>
+      <div class="sidebar_categories"><details><summary>Brands</summary>
         <div class="dropdown_content">
       <ul class="sidebar_list">
         <li class="red_text"><a href="#">All</a></li>
         <li><a href="#">Santa Cruz</a></li>
         <li><a href="#">Trek</a></li>
         <li><a href="#">Intense</a></li>
+        <li><a href="#">Canyon</a></li>
         <li><a href="#">Commencal</a></li>
         <li><a href="#">Mondraker</a></li>
       </ul>
         </div>
       </details>
         </div>
-      <div class="sidebar_categories"><details class="dropdown"><summary>Materials</summary>
-        <div class="dropdown_content">
+      <div class="sidebar_categories"><details><summary>Materials</summary>
       <ul class="sidebar_list">
     <li><a href="#">Aluminium</a></li>
     <li><a href="#">Carbon</a></li>
       </ul>
-      </div>
       </details>
+      </div>
     </div>
-  </div>
   </div>
   </body>
 </html>
