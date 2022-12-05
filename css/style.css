@@ -5,13 +5,14 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
 }
 
 .container { width: 100%; min-width: 768px; margin: 0 auto 0 20px;
-
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px;
+    align-content: center;
+    margin: 35px 70px 10px;
+    position: relative;
 }
 
 .left-section-navbar {
@@ -28,8 +29,8 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
 
 .vertical_line {
     position: absolute;
-    left: 90px;
-    top: 43px;
+    left: 50px;
+    top: 24px;
     border-left: 1px solid #8f6f31;
     height: 12px;
 }
@@ -89,8 +90,7 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
 
 .navbar-list {
     display: flex;
-    padding: 0 50px;
-
+    padding: 0 40px;
 }
 
 .navbar-list a {
@@ -115,7 +115,7 @@ body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ro
 }
 
 .headings {
-    padding: 25px 0 50px 25px;
+    margin: 20px 70px;
 }
 
 H1 {
@@ -131,11 +131,12 @@ H4 {
 }
 
 .sidebar {
-    margin-left: 25px;
+    margin-left: 70px;
     color: black;
     font-size: 0.90rem;
     height: auto;
     width: 150px;
+    position: absolute;
 }
 
 .sidebar_categories {
@@ -205,6 +206,104 @@ summary::after {
 
 .summary_content::after {
     content: "";
+}
+
+.block_container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 150px;
+    left: 350px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.bike_block {
+    margin: 60px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.bike_image {
+    width: 400px;
+}
+
+.add_button {
+    font-size: 0.75rem;
+    width: 90px;
+    height: 40px;
+    border-style: none;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    cursor: pointer;
+}
+
+.add_button:hover {
+    background-color: #c56b00;
+    color: white;
+}
+
+.bike_name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    
+}
+
+.square {
+    display: flex;
+    width: 40px;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.black_sqaure {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+}
+
+.green_square {
+    width: 12px;
+    height: 12px;
+    background-color: green;
+
+}
+
+.yellow_sqaure {
+    width: 12px;
+    height: 12px;
+    background-color: #cece1e;
+}
+
+.square_button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.discount {
+    color: red;
+}
+
+.discount_mark {
+    padding: 14px 5px 14px 5px;
+    border-radius: 30px;
+    background-color: #e0e03e;
+    position: absolute;
+    top: 5px;
+    font-size: 0.7rem;
+    font-weight: bold;
 }
 
 
