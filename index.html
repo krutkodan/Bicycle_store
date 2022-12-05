@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="us" xmlns="http://www.w3.org/1999/html">
   <head>
     <title>Bicycle Store</title>
     <meta charset="UTF-8" />
@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="container">
+  <div class="container">
+  <header>
       <div class="navbar">
         <div class="left-section-navbar">
           <img class="logo" src="/images/logo-navbar.svg" alt="logo" />
+          <div class="vertical_line"></div>
           <button class="search-button">
             <img class="logo-navbar" src="/images/search-navbar.svg" alt="search"/>
           </button>
-          <label hidden>Search</label><input class="search-area" type="search" placeholder="Search everything.. " />
+          <label for="search">
+          <input class="search-area" id="search" type="search" placeholder="Search everything.. "/>
+          </label>
         </div>
         <div class="right-section-navbar">
           <ul class="navbar-list">
@@ -30,13 +34,171 @@
                 alt="basket"
               />
             </button>
-            <div class="basket-counter">3</div>
+            <div class="basket-counter"><span>3</span></div>
           </div>
           <button class="user-button">
             <img class="logo-navbar" src="/images/user-navbar.svg" alt="user" />
           </button>
         </div>
       </div>
-    </header>
+  </header>
+    <div class="headings">
+      <h4>- RIDE <span class="letter_spacing">AWAY!</span></h4>
+      <h1>YOUR BEST RIDE</h1>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar_categories"><details open><summary class="summary_content">Bikes</summary>
+      <ul class="sidebar_list">
+      <li><a href="#">Cross-Country</a></li>
+      <li><a href="#">Dirt Jump</a></li>
+      <li class="red_text"><a href="#">Downhill</a></li>
+      <li><a href="#">Enduro</a></li>
+      <li><a href="#">Fat Bikes</a></li>
+      <li><a href="#">Trail</a></li>
+      </ul>
+      </details>
+    </div>
+    <div class="sidebar_categories">
+      <a href="#">Accessories</a>
+    </div>
+      <div class="sidebar_categories">
+      <a href="#">Equipments</a>
+    </div>
+      <div class="sidebar_categories"><span>Price</span>
+      <div class="price_input_box">
+        <label for="price_one">
+      <input type="number" min="3000" placeholder="3000$" class="price_input" id="price_one">
+        </label>
+        <label for="price_two">
+      <input type="number" min="3000" max="7000$" placeholder="7000$" class="price_input" id="price_two">
+        </label>
+      </div>
+        <label for="slider_range">
+      <input type="range" id="slider_range" min="0" max="7000" value="50" class="slider">
+        </label>
+      </div>
+      <div class="sidebar_categories"><details><summary>Brands</summary>
+        <div class="dropdown_content">
+      <ul class="sidebar_list">
+        <li class="red_text"><a href="#">All</a></li>
+        <li><a href="#">Santa Cruz</a></li>
+        <li><a href="#">Trek</a></li>
+        <li><a href="#">Intense</a></li>
+        <li><a href="#">Canyon</a></li>
+        <li><a href="#">Commencal</a></li>
+        <li><a href="#">Mondraker</a></li>
+      </ul>
+        </div>
+      </details>
+        </div>
+      <div class="sidebar_categories"><details><summary>Materials</summary>
+      <ul class="sidebar_list">
+    <li><a href="#">Aluminium</a></li>
+    <li><a href="#">Carbon</a></li>
+      </ul>
+      </details>
+      </div>
+    </div>
+
+    <div class="block_container">
+        <div class="block_one">
+        <div class="bike_block">
+          <img class="bike_image" src="images/Canyon_black_enduro.jpg">
+          <div class="bike_name">
+          <span>Canyon Enduro</span>
+           <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <div class="square">
+          <div class="black_sqaure"><input class="square_button" type="button"></div>
+          <div class="green_square"><input class="square_button" type="button"></div>
+          </div>
+          <span>4500$</span>
+        </div>
+        <div class="bike_block">
+          <img class="bike_image" src="images/Commencal_Fat_bike.jpg">
+          <div class="bike_name">
+          <span>Commencal Fat Bike</span>
+         <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <div class="discount_mark">-13%</div>
+          <span>4000$</span>
+          <s><span class="discount">5000$</span></s>
+        </div>
+        <div class="bike_block">
+          <img class="bike_image" src="images/Santa_Cruz_downhill_MK.jpg">
+          <div class="bike_name">
+          <span>Santa Cruze Downhill</span>
+         <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <span>5000$</span>
+        </div>
+        </div>
+        <div class="block_two">
+        <div class="bike_block">
+          <img class="bike_image" src="images/Mondraker_superfoxy_cross-country.jpg">
+          <div class="bike_name">
+          <span>Mondraker Superfoxy</span>
+              <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <div class="discount_mark">-20%</div>
+          <span>6100$</span>
+          <s><span class="discount">7000$</span></s>
+        </div>
+        <div class="bike_block">
+          <img class="bike_image" src="images/Canyon_dirtjump.jpg">
+          <div class="bike_name">
+          <span>Canyon Dirtjump</span>
+         <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <span>3200$</span>
+        </div>
+        <div class="bike_block">
+          <img class="bike_image" src="images/Intense_ACV27.5+_trail.jpg" id="ACV">
+          <div class="bike_name">
+          <span>Intense ACV27.5+</span>
+         <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <div class="discount_mark">-14%</div>
+          <span>3700$</span>
+          <s><span class="discount">4300$</span></s>
+        </div>
+        </div>
+        <div class="block_three">
+        <div class="bike_block">
+          <img class="bike_image" src="images/Trek_Slash99_black_downhill.jpg">
+          <div class="bike_name">
+          <span>Trek Slash99</span>
+         <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <div class="square">
+          <div class="black_sqaure"><input class="square_button" type="button"></div>
+          <div class="yellow_sqaure"><input class="square_button" type="button"></div>
+          </div>
+          <span>4800$</span>
+        </div>
+        <div class="bike_block">
+          <img class="bike_image" src="images/Santa_Cruz_V10_downhill.jpg">
+          <div class="bike_name">
+          <span>Santa Cruz V10</span>
+         <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <span>5200$</span>
+        </div>
+        <div class="bike_block">
+          <img class="bike_image" src="images/Canyon_exceed-cr_trail.jpg">
+          <div class="bike_name">
+          <span>Canyon Exceed</span>
+         <input class= "add_button" type="button" value="Add to card">
+          </div>
+          <span>7000$</span>
+        </div>
+        </div>
+      </div>
+      </div>
+  </div>
   </body>
 </html>
+
+
+
+
